@@ -1,0 +1,43 @@
+@import "../styles/Global.css";
+
+.homepage-container {
+    position: relative;
+    min-height: 100vh;
+    background-color: rgb(232, 231, 226);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    text-align: center;
+  }
+  
+  /* Welcome Title */
+  .welcome-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #676663;
+    margin-bottom: 20px;
+  }
+  
+  /* Divider */
+  .divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0 20px;
+    width: 90%;
+    max-width: 500px;
+    color: #676663;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #d5cfc3;
+    margin: 0 10px;
+  }

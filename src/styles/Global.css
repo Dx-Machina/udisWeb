@@ -1,0 +1,96 @@
+/* Global.css */
+
+/*--------------------------------------------------------------
+# CSS Variables & Global Tokens
+--------------------------------------------------------------*/
+:root {
+  /* Color Palette */
+  --color-base: #d5cfc3;
+  --color-dark: #676663;
+  --color-light: #efede6;
+  --color-accent: #a1998f;
+  --color-background: #fafaf8;
+
+  /* Typography */
+  --font-body: 'Josefin Sans', sans-serif;
+  --font-size-base: 16px;
+
+  /* Spacing Scales (using rem for scalability) */
+  --spacing-xs: 0.25rem; 
+  --spacing-sm: 0.5rem;  
+  --spacing-md: 1rem;    
+  --spacing-lg: 1.5rem;  
+  --spacing-xl: 2rem;    
+}
+
+/*--------------------------------------------------------------
+# Base Styles & Resets
+--------------------------------------------------------------*/
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  background-color: var(--color-background);
+  color: var(--color-dark);
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1rem; 
+  line-height: 1.5;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: var(--spacing-md);
+  background-color: var(--color-background);
+}
+/* for phones */
+@media (max-width: 768px) {
+  .page-container {
+    padding: var(--spacing-sm);
+  }
+
+  .top-bar-title {
+    font-size: 1.125rem; /* ~18px */
+  }
+}
+
+@media (max-width: 480px) {
+  .top-bar-avatar {
+    width: 30px;
+    height: 30px;
+  }
+
+  .page-container {
+    padding: var(--spacing-sm);
+  }
+
+  .CardGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .CardGrid {
+    gap: 2rem;
+  }
+}

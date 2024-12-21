@@ -1,0 +1,301 @@
+.teacher-container {
+  background-color: #fafaf8;
+  min-height: 100vh;
+  padding-top: 80px;
+  font-family: sans-serif;
+}
+
+.teacher-content {
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.page-title {
+  color: #676663;
+  margin-top: 0;
+}
+
+.page-subtitle {
+  color: #a1998f;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+.search-button {
+  padding: 8px 16px;
+  background-color: #a1998f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #676663;
+}
+
+.error-message {
+  color: #fff;
+  background-color: #d9534f;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.success-message {
+  color: #fff;
+  background-color: #5cb85c;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.no-data-msg {
+  color: #a1998f;
+}
+
+
+.recent-students-container {
+  background: #efede6;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.recent-students-container h4 {
+  margin-top: 0;
+  color: #676663;
+}
+
+.recent-student-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0;
+}
+
+.recent-student-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex: 1;
+  cursor: pointer;
+}
+
+.recent-student-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.recent-student-name {
+  color: #676663;
+}
+
+.open-recent-button {
+  background-color: #a1998f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.open-recent-button:hover {
+  background-color: #676663;
+}
+
+.remove-recent-button {
+  background: none;
+  border: none;
+  color: #d9534f;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.student-data-card {
+  background: #efede6;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.student-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.student-header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.student-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.student-name {
+  margin: 0;
+  color: #676663;
+}
+
+.student-email {
+  margin: 5px 0;
+  color: #a1998f;
+}
+
+.section-title {
+  color: #676663;
+  margin-bottom: 10px;
+}
+
+.major-field {
+  margin-bottom: 10px;
+}
+
+.label {
+  margin-right: 5px;
+  font-weight: bold;
+  color: #676663;
+}
+
+.major-input {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.subsection-title {
+  color: #676663;
+  margin-bottom: 10px;
+}
+
+.class-card {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.class-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.class-input {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+.class-grade {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 50px;
+}
+
+.class-cid {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 80px;
+}
+
+.remove-button {
+  padding: 5px 10px;
+  background-color: #a1998f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: #676663;
+}
+
+.assignments-title {
+  margin: 0 0 5px 0;
+  color: #676663;
+}
+
+.assignment-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.assignment-input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.assignment-date {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.assignment-points {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.action-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.action-button.secondary {
+  background-color: #a1998f;
+  color: #fff;
+}
+
+.action-button.secondary:hover {
+  background-color: #676663;
+}
+
+.add-class-button {
+  margin-top: 10px;
+}
+
+.action-button.primary {
+  background-color: #676663;
+  color: #efede6;
+}
+
+.action-button.primary:hover {
+  background-color: #a1998f;
+}
+
+.update-button-container {
+  margin-top: 20px;
+}

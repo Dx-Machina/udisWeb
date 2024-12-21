@@ -1,0 +1,33 @@
+/* src/styles/SchoolAdminDashboard.css */
+.schooladmin-dashboard-container {
+    display: flex;
+    margin-top: 60px; /* adjust as needed */
+  }
+  
+  .schooladmin-dashboard-sidebar {
+    width: 200px;
+    background: #efede6;
+  }
+  
+  .vertical-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .vertical-nav a {
+    padding: 15px;
+    text-decoration: none;
+    color: #676663;
+  }
+  
+  .vertical-nav a.active {
+    background: #a1998f;
+    color: #fff;
+  }
+  
+  .schooladmin-dashboard-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }

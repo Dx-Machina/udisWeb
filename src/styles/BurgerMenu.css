@@ -1,0 +1,46 @@
+/* Burger Menu Styles */
+.burger-menu {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .burger-button {
+    background-color: #a1998f;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .burger-menu-popup {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    background-color: #efede6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .burger-menu-popup button {
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #676663;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .burger-menu-popup button:hover {
+    background: #fafaf8;
+    color: #a1998f;
+  }

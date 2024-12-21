@@ -1,0 +1,121 @@
+@import "../styles/Global.css";
+.finances-page {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafaf8;
+    height: 100vh;
+  }
+  
+  .finances-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .financial-summary {
+    margin-top: 20px;
+  }
+  
+  .financial-chart {
+    margin-top: 10px;
+    padding: 20px;
+    border: 1px dashed #676663;
+    text-align: center;
+    color: #a1998f;
+  }
+  
+  .details-button,
+  .wallet-button,
+  .connect-button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #676663;
+    color: #efede6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .details-button:hover,
+  .wallet-button:hover,
+  .connect-button:hover {
+    background-color: #a1998f;
+  }
+  
+  .connect-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .connect-button {
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+  }
+
+
+
+
+
+
+  
+  .card.minimal {
+    border: 1px solid #ccc;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .card.minimal .card-image,
+  .card.minimal .card-tag {
+    display: none;
+  }
+  .card.highlighted {
+    background-color: #ffd700;
+    color: #333;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card.highlighted .card-title {
+    font-weight: bold;
+  }
+  
+  .card.highlighted .card-tag {
+    background-color: #333;
+    color: #fff;
+  }
+  .card.compact {
+    width: 200px;
+    height: 120px;
+    padding: 8px;
+  }
+  
+  .card.compact .card-title {
+    font-size: 14px;
+  }
+  
+  .card.compact .card-subtitle {
+    font-size: 12px;
+  }
+  
+  .card.compact .card-button {
+    font-size: 12px;
+  }
+  .card.interactive {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card.interactive:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }

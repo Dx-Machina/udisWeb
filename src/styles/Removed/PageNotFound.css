@@ -1,0 +1,25 @@
+@import "../styles/Global.css";
+.page-not-found {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .page-not-found h1 {
+    font-size: 48px;
+    color: #676663;
+  }
+  
+  .page-not-found p {
+    font-size: 20px;
+    color: #a1998f;
+  }
+  
+  .page-not-found button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #676663;
+    color: #efede6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

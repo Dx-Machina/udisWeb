@@ -1,0 +1,77 @@
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #efede6;
+    border-bottom: 1px solid #a1998f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-sizing: border-box;
+  }
+  
+  .top-bar-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #676663;
+    margin: 0;
+  }
+  
+  .top-bar-avatar {
+    width: 36px; 
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover; 
+    margin-left: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .top-bar-overlay {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #fafaf8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 1000;
+    min-width: 150px;
+  }
+  
+  .top-bar-overlay button {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: #676663;
+    padding: 8px 10px;
+    cursor: pointer;
+    text-align: left;
+    width: 100%; 
+  }
+  
+  .top-bar-overlay button:hover {
+    background: #efede6;
+  }
+  
+
+  @media (max-width: 768px) {
+    .top-bar-title {
+      font-size: 18px;
+    }
+  
+    .top-bar-avatar {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .top-bar-overlay {
+      top: 50px; 
+      right: 10px;
+    }
+  }

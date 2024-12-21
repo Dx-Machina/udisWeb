@@ -1,0 +1,235 @@
+@import "./Global.css"; 
+
+.education-page-container {
+  background-color: var(--color-background);
+  min-height: 100vh;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin: 20px;
+}
+
+.top-actions {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.action-button {
+  background-color: var(--color-accent);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background-color: var(--color-dark);
+}
+
+/* Personal / Citizen / Teacher personal view */
+.education-content {
+  width: 100%;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.institution {
+  background: #efede6;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.institution-heading {
+  margin-top: 0;
+  font-size: 20px;
+  color: var(--color-dark);
+}
+
+.institution-heading span {
+  font-size: 14px;
+  color: var(--color-accent);
+}
+
+.degree {
+  background: #fafaf8;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+.degree-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.degree-major {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--color-dark);
+}
+
+.degree-details {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--color-dark);
+  align-items: center;
+}
+
+.courses-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.courses-table th, .courses-table td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #d5cfc3;
+  color: var(--color-dark);
+}
+
+.courses-table th {
+  background-color: #efede6;
+  font-weight: bold;
+}
+
+.no-data-msg {
+  font-size: 14px;
+  color: var(--color-accent);
+  margin-top: 10px;
+  text-align: center;
+}
+
+.loading {
+  font-size: 16px;
+  color: var(--color-dark);
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* Teacher mode styles */
+.teacher-mode-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.teacher-tools {
+  background: #efede6;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.teacher-tools h2 {
+  margin-top: 0;
+  color: var(--color-dark);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.student-search {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.student-search input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #d5cfc3;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.search-button {
+  background-color: var(--color-accent);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: var(--color-dark);
+}
+
+.previous-students-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.previous-student-card {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #fafaf8;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.previous-student-card:hover {
+  background: #ddd;
+}
+
+.previous-student-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.previous-student-name {
+  font-size: 14px;
+  color: var(--color-dark);
+}
+
+.teacher-student-data {
+  background: #efede6;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.teacher-student-data h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: var(--color-dark);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .degree-details {
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+  }
+
+  .previous-student-card {
+    font-size: 12px;
+  }
+
+  .previous-student-avatar {
+    width: 25px;
+    height: 25px;
+  }
+}

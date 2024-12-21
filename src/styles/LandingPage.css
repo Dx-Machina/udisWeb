@@ -1,0 +1,52 @@
+@import "../styles/Global.css";
+
+.landing-page {
+  background-color: var(--color-background);
+  color: var(--color-dark);
+  margin: 0;
+  padding: 0;
+}
+
+.landing-header {
+  text-align: center;
+  padding: var(--spacing-lg);
+  margin: 0;
+}
+
+.branding {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin: 0;
+}
+
+
+.main-content {
+  text-align: center;
+  padding: var(--spacing-lg);
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-dark);
+  margin: 0 auto;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-accent);
+  margin: 0 auto;
+}
+
+.main-illustration {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: var(--spacing-md) auto 0 auto;
+  border-radius: var(--spacing-sm);
+}
