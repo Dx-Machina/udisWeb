@@ -13,7 +13,7 @@ const TopBar = ({ title, user }) => {
   const defaultAvatar = "/images/default_avatar.png"; 
 
   
-  const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001';
+  const API_BASE_URL = process.env.REACT_APP_API_URL;
 
   let avatarSrc = defaultAvatar;
   if (user?.avatarPicture && user.avatarPicture.trim() !== '') {

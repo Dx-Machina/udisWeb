@@ -18,7 +18,7 @@ const WalletPage = () => {
   const [expandedTransaction, setExpandedTransaction] = useState(null);
   const [userCache, setUserCache] = useState({}); // Cache to store user info by UDIS/email key
 
-  const API_BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:5001";
+  const API_BASE_URL = process.env.REACT_APP_API_URL;
 
   // Fetch wallet on mount
   useEffect(() => {

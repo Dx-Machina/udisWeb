@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 import TopBar from '../components/TopBar';
 import '../styles/TeacherPage.css';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001';
+const API_BASE_URL = process.env.REACT_APP_API_URL;
 //========================================================================================================================================================
 const TeacherPage = () => {
   const [udisIdQuery, setUdisIdQuery] = useState('');
