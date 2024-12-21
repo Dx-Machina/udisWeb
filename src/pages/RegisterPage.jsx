@@ -6,6 +6,8 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import "../styles/RegisterPage.css";
 
+const API_BASE_URL = process.env.REACT_APP_API_URL
+
 const RegisterPage = () => {
   const [name, setName] = useState('');
   const [lastName, setLastName] = useState('');
@@ -50,7 +52,7 @@ const RegisterPage = () => {
         formData.append('avatarPicture', avatarFile);
       }
 
-      const response = await axios.post('http://localhost:5001/api/user/register', formData, {
+      const response = await axios.post(`${API_BASE_URL}/api/user/register`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

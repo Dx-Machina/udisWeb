@@ -12,11 +12,12 @@ const LoginPage = () => {
   const [rememberMe, setRememberMe] = useState(false); // Remember Me state
   const [error, setError] = useState('');
   const navigate = useNavigate();
+  const API_BASE_URL = process.env.REACT_APP_API_URL
   //=========================================================================================
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5001/api/user/login', {
+      const response = await fetch(`${API_BASE_URL}/api/user/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
